@@ -103,6 +103,37 @@ Your mySigen password stays on your machine, in the env file or your MCP client'
 only sends it to Sigen's login endpoint (encrypted, as the app does). The env file and saved JSON
 responses are in `.gitignore`, so a clone of this repo won't pick them up.
 
+## Sources and credits
+
+### Dependencies
+
+These are installed from PyPI. None of their code is copied into this repo.
+
+| Package | Used for | Licence |
+|---|---|---|
+| [`sigen`](https://pypi.org/project/sigen/) by Francis Brady | Sigen cloud login, live flow, modes and smart loads | MIT (per its PyPI classifier and bundled licence file). Its GitHub repo, `fbradyirl/sigen`, was not reachable at the time of writing. |
+| [`mcp`](https://github.com/modelcontextprotocol/python-sdk) (MCP Python SDK) | The MCP server | MIT |
+| [`aiohttp`](https://github.com/aio-libs/aiohttp) | HTTP requests | Apache-2.0 (with some MIT parts) |
+| [`pycryptodome`](https://github.com/Legrandin/pycryptodome) (installed by `sigen`) | Password encryption at login | BSD 2-Clause and public domain |
+
+### Reference material
+
+No code was copied from these. They were used for facts about the APIs, which this repo
+reimplements independently.
+
+| Source | What it gave us | Licence |
+|---|---|---|
+| [GerardBrowne/sig-data](https://github.com/GerardBrowne/sig-data) | The path and parameter names of the day-history endpoint (`data-process/sigen/station/statistics/energy`) | No licence published |
+| [paulczar/sigen-mcp](https://github.com/paulczar/sigen-mcp) (`docs/sigencloud-api.md`) | Background on Sigen's end-user and developer APIs | MIT |
+| [Octopus Energy public API](https://developer.octopus.energy/) | Tariff unit rates, standing charges and postcode-to-region lookup | Octopus's API terms |
+
+The meaning of each history field, in [docs/sigen-api.md](docs/sigen-api.md), was worked out by
+comparing the API data with the mySigen app.
+
+"Sigenergy", "Sigen" and "mySigen" are trademarks of Sigenergy Technology Co., Ltd. "Octopus
+Energy" and "Flux" belong to Octopus Energy Group. This project isn't affiliated with or endorsed
+by either.
+
 ## Licence
 
-MIT. See [LICENSE](LICENSE).
+MIT. See [LICENSE](LICENSE). Dependencies keep their own licences, listed above.
