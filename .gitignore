@@ -1,0 +1,13 @@
+# Local settings and credentials: keep them in ~/.config/sigen-mcp/env, never here
+env
+.env
+*.env
+!env.example
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Saved API responses can contain station IDs, addresses and usage data
+*.json
