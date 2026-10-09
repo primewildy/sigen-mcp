@@ -111,7 +111,7 @@ These are installed from PyPI. None of their code is copied into this repo.
 
 | Package | Used for | Licence |
 |---|---|---|
-| [`sigen`](https://pypi.org/project/sigen/) by Francis Brady | Sigen cloud login, live flow, modes and smart loads | MIT (per its PyPI classifier and bundled licence file). Its GitHub repo, `fbradyirl/sigen`, was not reachable at the time of writing. |
+| [`sigen`](https://pypi.org/project/sigen/) (GitHub user fbradyirl) | Sigen cloud login, live flow, modes and smart loads | MIT (per its PyPI classifier and bundled licence file). Its GitHub repo, `fbradyirl/sigen`, was not reachable at the time of writing. |
 | [`mcp`](https://github.com/modelcontextprotocol/python-sdk) (MCP Python SDK) | The MCP server | MIT |
 | [`aiohttp`](https://github.com/aio-libs/aiohttp) | HTTP requests | Apache-2.0 (with some MIT parts) |
 | [`pycryptodome`](https://github.com/Legrandin/pycryptodome) (installed by `sigen`) | Password encryption at login | BSD 2-Clause and public domain |
